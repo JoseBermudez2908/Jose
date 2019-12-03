@@ -1,6 +1,7 @@
 package ProjectoLobos.ProjectoLobos;
 
-import junit.framework.Test;
+import org.apache.logging.log4j.core.config.plugins.util.ResolverUtil.Test;
+
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
@@ -25,7 +26,7 @@ public class AppTest
      */
     public static Test suite()
     {
-        return new TestSuite( AppTest.class );
+        return (Test) new TestSuite( AppTest.class );
     }
 
     /**
